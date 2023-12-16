@@ -13,7 +13,7 @@ repositories {
 // Configure Gradle IntelliJ Plugin
 // Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
 intellij {
-    version.set("2021.2")
+    version.set("2022.1.4")
     type.set("IC") // Target IDE Platform
 
     plugins.set(listOf(/* Plugin Dependencies */))
@@ -25,11 +25,6 @@ dependencies {
 }
 
 tasks {
-//    compileJava {
-//        options.compilerArgs = listOf("-XDignore.symbol.file")
-////        options.fork = true // may not needed on 1.8
-//        options.forkOptions.executable = "javac" // may not needed on 1.8
-//    }
     // Set the JVM compatibility versions
     withType<JavaCompile> {
         sourceCompatibility = "11"
